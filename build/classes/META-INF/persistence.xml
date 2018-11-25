@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="EventViewerPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>BL.Admin</class>
+    <class>BL.Organizer</class>
+    <class>BL.City</class>
+    <class>BL.Country</class>
+    <class>BL.EventLocation</class>
+    <class>BL.EventCategory</class>
+    <class>BL.SubCategory</class>
+    <class>BL.EventImages</class>
+    <class>BL.Report</class>
+    <class>BL.EventPayment</class>
+    <class>BL.EventUsers</class>
+    <class>BL.EventType</class>
+    <class>BL.Role</class>
+    <class>BL.Sysdiagrams</class>
+    <class>BL.EventSchedule</class>
+    <class>BL.Sponsor</class>
+    <class>BL.Event</class>
+    <class>BL.ContactSponsor</class>
+    <class>BL.Users</class>
+    <class>BL.ContactUser</class>
+    <class>BL.EventEntryType</class>
+    <class>BL.EventRules</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=EventViewer"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="sa"/>
+    </properties>
+  </persistence-unit>
+</persistence>
